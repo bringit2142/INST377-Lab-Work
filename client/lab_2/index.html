@@ -1,4 +1,3 @@
-Replace this with your complete HTML from Lab 1
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,15 +5,17 @@ Replace this with your complete HTML from Lab 1
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Caleb Andree's Labs</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
-      <header><h1>Caleb Andree's Labs for INST377</h1></header>
-      <div>
-        <div>
-          <h2>Album Names</h2>
-          <ol>
+    <div class="wrapper">
+      <!--Wrapper-->
+      <header class="header"><h1>Caleb Andree's Labs for INST377</h1></header>
+      <div class="container">
+        <!--Container-->
+        <div class="left_section box">
+          <h2 class="subtitle">Album Names</h2>
+          <ol class="box">
             <li>Dr. Dre - 2001</li>
             <li>OutKast - Stankonia</li>
             <li>Nirvana - Nevermind</li>
@@ -22,9 +23,9 @@ Replace this with your complete HTML from Lab 1
             <li>Tame Impala - Currents</li>
           </ol>
         </div>
-        <div>
-          <h2>Image Carousel</h2>
-          <div>
+        <div class="right_section box">
+          <h2 class="subtitle">Image Carousel</h2>
+          <div class="grid">
             <img src="images/mochi.jpg" alt="A mochi ball in a bubble" />
             <img src="images/mochi.gif" alt="A dancing mochi ball" />
             <img src="images/mochi.png" alt="Another mochi ball" />
@@ -39,9 +40,10 @@ Replace this with your complete HTML from Lab 1
         </div>
       </div>
     </div>
-    <footer>
+    <footer class="footer">
       My Github Account:
       <a
+        class="footer a"
         href="http://github.com/bringit2142/INST377-Lab-Work"
         target="_blank"
         rel="noopener noreferrer"
@@ -50,13 +52,3 @@ Replace this with your complete HTML from Lab 1
     </footer>
   </body>
 </html>
-
-
-Hook it up to CSS by including style.css in the <head> tag
-
-Then add CSS class names to your HTML to make it look like the lab pictures.
-For example: <div class="selector">
-
-You should not need to edit the CSS to do this, only the HTML.
-
-Don't forget to add an actual set of image descriptions to your image carousel.
