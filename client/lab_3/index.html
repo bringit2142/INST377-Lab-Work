@@ -24,17 +24,18 @@
           </ol>
         </div>
         <div class="right_section box">
-          <h2 class="subtitle">Image Carousel</h2>
-          <div class="grid">
-            <img src="images/familypicture.JPG" alt="A picture of me when I was younger" />
-            <img src="images/ischoolpic.jpg" alt="iSchool logo" />
-            <img src="images/mckeldin.jpg" alt="A picture of Mckeldin Library" />
-            <img
-              src="images/UMDlogo.png"
-              alt="A picture of the UMD logo"
-            />
+          <h2>Image Carousel</h2>
+          <div class="carousel">
+            <button class="prev">Prev</button>
+            <div class="slides">
+              <div class="carousel_item visible"><img id="slide_1" src="images/familypicture.JPG" alt="A picture of me when I was younger"/></div>
+              <div class="carousel_item hidden"><img id="slide_2" src="images/ischool pic.jpg" alt="iSchool logo" /></div>
+              <div class="carousel_item hidden"><img id="slide_3" src="images/mckeldin.jpg" alt="A picture of Mckeldin Library"/></div>
+              <div class="carousel_item hidden"><img id="slide_4" src="images/UMDlogo.png" alt="A picture of the UMD logo"/></div>
+            </div>
+            <button class="next">Next</button>
           </div>
-          <div>
+          <div class="box">
             <p>These are 4 mochi ball images in different image formats</p>
           </div>
         </div>
@@ -50,6 +51,6 @@
         >Link to account</a
       >
     </footer>
-    <script src="script.js" ></script>
+    <script src="script.js"></script>
   </body>
 </html>
