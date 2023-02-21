@@ -311,4 +311,10 @@ form label {
       justify-content: center;
       align-items: center;    
     }
+    .box{
+      width:85%;
+    }
+    .right_section{
+      align-items: flex-start;
+    }
   }
