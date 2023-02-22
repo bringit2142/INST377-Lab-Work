@@ -30,7 +30,7 @@ body {
   font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  background-color: rgb(239, 239, 239);
+  background-color: #FEEFE5;
 }
 
 
@@ -92,8 +92,8 @@ form {
   /* this will push other blocks out of the way */
 
   /* colors */
-  background-color: #ffe08a;
-  color: #4a4a4a;
+  background-color: #736B60;
+  color: #D9CFC1;
 
   /* shapes */
   border-radius: 6px;
@@ -129,14 +129,14 @@ form {
 }
 
 .left_section {
-  background-color: rgba(0, 139, 139, 0.8);
+  background-color: #BF8B85;
   flex: 0 1 auto;
   margin: 1rem;
   padding: 1.5rem;
 }
 
 .right_section {
-  background-color: rgba(255, 224, 138, 0.7);
+  background-color: #548687;
   flex: 1 2 auto;
   margin: 1rem;
   align-items: center;
@@ -154,13 +154,13 @@ form {
 .footer {
   flex-shrink: 0;
   padding: 1rem;
-  background-color: rgba(0, 139, 139, 0.8);
+  background-color: #594236;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
 .footer a {
-  color: rgba(255, 224, 138, 1);
+  color: #05A8AA;
   text-decoration: underline;
 }
 
@@ -173,7 +173,7 @@ form {
   /* Hue, saturation, luminosity, alpha */
   background-color: hsla(0, 0%, 90%, 0.15);
   /* red, green, blue, alpha */
-  color: rgb(246, 169, 93);
+  color: #B23A48;
   text-decoration: none;
 }
 
@@ -311,10 +311,14 @@ form label {
       justify-content: center;
       align-items: center;    
     }
+    .left_section,
+    .right_section {
+       width: 85%;
+       align-items: flex-start;
+        }
+    
     .box{
-      width:85%;
+     width:85%;
     }
-    .right_section{
-      align-items: flex-start;
-    }
-  }
+   
+}
