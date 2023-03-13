@@ -19,13 +19,16 @@ function injectHTML(list){
   })
 }
 
-function cutRestaurantList(list){
+//This is a modified version of cutRestarantList, where each value is unique in the list, the same restarant should not appear twice
+function cutRestaurantList(list) {
   console.log('fired cutRestaurantList');
   const range = [...Array(15).keys()];
-  return newArray = range.map((item, index) => {
+  const uniqueList = new Set(); // Create a Set object to store unique values
+  while (uniqueList.size < 15) { // Loop until we have 15 unique values
     const idx = getRandomIntInclusive(0, list.length - 1);
-    return list[idx]
-  })
+    uniqueList.add(list[idx]); // Add each value to the Set
+  }
+  return Array.from(uniqueList); // Convert the Set back to an array and return it
 }
 
 /* A quick filter that will return something based on a matching input */
@@ -38,13 +41,6 @@ function filterList(list, query) {
   })
 
 
-  /*
-    Using the .filter array method, 
-    return a list that is filtered by comparing the item name in lower case
-    to the query in lower case
-
-    Ask the TAs if you need help with this
-  */
 }
 
 async function mainEvent() { // the async keyword means we can make API requests
