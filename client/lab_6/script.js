@@ -84,11 +84,15 @@ async function mainEvent() { // the async keyword means we can make API requests
     console.log(newList)
   })
 
+  //Checks to see if the list is empty before generating list
+  //Prevents browser from crashing if generate list button is clicked before loading data
   generateListButton.addEventListener('click', (event) => {
-    console.log('generate new list');
+  console.log('generate new list');
+  if (currentList.length > 0) {
     const restaurantsList = cutRestaurantList(currentList);
     injectHTML(restaurantsList);
-  })
+  }
+});
 
 }
 
